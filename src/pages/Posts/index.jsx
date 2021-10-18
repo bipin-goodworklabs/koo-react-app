@@ -26,7 +26,9 @@ function Posts() {
 	return (
 		<div>
 			<Container>
-				<Typography variant="h4">Posts</Typography>
+				<Typography variant="h4" style={{ margin: '12px 0' }}>
+					Posts
+				</Typography>
 				<PostsList posts={posts} />
 			</Container>
 		</div>

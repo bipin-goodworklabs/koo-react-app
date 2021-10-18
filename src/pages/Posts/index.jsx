@@ -1,9 +1,9 @@
+import React, { useState, useEffect } from 'react';
 import { Container, Typography } from '@mui/material';
 import axios from 'axios';
-import React, { useState, useEffect } from 'react';
 import PostsList from '../../components/postslist';
 
-function Posts(props) {
+function Posts() {
 	const [posts, setPosts] = useState();
 
 	useEffect(() => {
@@ -17,7 +17,7 @@ function Posts(props) {
 			);
 			setPosts(data.data);
 		} catch (error) {
-			console.log('Error: ',error);
+			console.log('Error: ', error);
 		}
 	};
 	if (!posts) {
